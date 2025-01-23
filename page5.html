@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Step</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8def7, #f3e9fc);
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .page {
+            width: 400px;
+            height: 250px;
+            background-color: #fcedf4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: visible; /* Allows images to overflow the grid */
+        }
+
+        .content {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .image-placeholder {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #d1c4e9;
+            border-radius: 50%;
+        }
+
+        .image-placeholder.left {
+            bottom: -50px; /* Adjust to overlap */
+            left: -50px;
+        }
+
+        .image-placeholder.right {
+            bottom: -50px; /* Adjust to overlap */
+            right: -50px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            margin-top: 40px; /* Shifted down */
+        }
+
+        .back-button, .read-again-button {
+            background: #9370db;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            text-transform: uppercase;
+            min-width: 120px;
+        }
+
+        .back-button:hover, .read-again-button:hover {
+            background: #7b5bc7;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            I just want you to know, that regardless of anything, you're definitely gonna do your best.
+            Outcome ka dekh lege. We'll see. As we always have. I love you and I'm always here for you.
+            And everyone else is also here for you, rooting for you.
+        </div>
+    </div>
+    <div class="button-container">
+        <!-- 'Back' button to return to page 4 -->
+        <a href="page4.html">
+            <button class="back-button">Back</button>
+        </a>
+        <!-- 'Read Again' button to revisit page 1 -->
+        <a href="homepage.html">
+            <button class="read-again-button">Read Again</button>
+        </a>
+    </div>
+</body>
+</html>

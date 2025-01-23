@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8def7, #f3e9fc);
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .page {
+            width: 400px;
+            height: 250px;
+            background-color: #fcedf4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: visible; /* Allows images to overflow the grid */
+        }
+
+        .content {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .image-placeholder {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #d1c4e9;
+            border-radius: 50%;
+        }
+
+        .image-placeholder.left {
+            bottom: -50px; /* Adjust to overlap */
+            left: -50px;
+        }
+
+        .image-placeholder.right {
+            bottom: -50px; /* Adjust to overlap */
+            right: -50px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            margin-top: 40px; /* Shifted down */
+        }
+
+        .back-button, .next-button {
+            background: #9370db;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            text-transform: uppercase;
+            min-width: 120px;
+        }
+
+        .back-button:hover, .next-button:hover {
+            background: #7b5bc7;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            It was one fine sad day in June of 2022 when I reinitiated contact with you on the first day of BT.
+            It's 23rd January 2025 today. I have no idea what happened. 
+            You know when you lose your favourite dps scrunchie and then days later you find it again? The joy!! 
+            That was me when I saw you at BT again straight after 8th grade.
+            Thought I'd really lost you after 8th.
+        </div>
+        
+    </div>
+    <div class="button-container">
+        <!-- Updated 'Back' button to link to homepage.html -->
+        <a href="homepage.html">
+            <button class="back-button">Back</button>
+        </a>
+        <a href="page3.html">
+            <button class="next-button">Next</button>
+        </a>
+    </div>
+</body>
+</html>
